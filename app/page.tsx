@@ -109,7 +109,7 @@ export default function ProfilePage() {
                   <Mail className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" className="gap-2" asChild>
+              <Button variant="outline" className="gap-2 bg-transparent" asChild>
                 <Link
                   href="https://drive.google.com/file/d/1rSvuAUxT2q4T-70Wr6QJx3_mDbSv3N8B/view?ts=67eb6267"
                   download
@@ -222,7 +222,7 @@ export default function ProfilePage() {
             {[
               {
                 title: "E-commerce Platform",
-                desc: "A modern e-commerce solution built with Next.js and Stripe integration",
+                desc: "A modern e-commerce solution built with Next.js.",
                 tech: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
                 image: "/images/ecommerce.png",
                 codeLink: "https://github.com/YumgNPO/e-commerce-store.git",
@@ -257,7 +257,7 @@ export default function ProfilePage() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button size="sm" variant="outline" className="gap-2" asChild>
+                    <Button size="sm" variant="outline" className="gap-2 bg-transparent" asChild>
                       <Link href={project.codeLink} target="_blank">
                         <Github className="h-4 w-4" />
                         <span>Code</span>
@@ -276,7 +276,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex justify-center">
-            <Button variant="outline" className="gap-2" asChild>
+            <Button variant="outline" className="gap-2 bg-transparent" asChild>
               <Link href="https://github.com/YumgNPO" target="_blank">
                 <Github className="h-4 w-4" />
                 <span>View More Projects on GitHub</span>
@@ -450,4 +450,3 @@ export default function ProfilePage() {
     </div>
   )
 }
-
