@@ -109,7 +109,7 @@ export default function ProfilePage() {
                   <Mail className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button variant="outline" className="gap-2" asChild>
+              <Button variant="outline" className="gap-2 bg-transparent" asChild>
                 <Link
                   href="https://drive.google.com/file/d/1rSvuAUxT2q4T-70Wr6QJx3_mDbSv3N8B/view?ts=67eb6267"
                   download
@@ -222,7 +222,7 @@ export default function ProfilePage() {
             {[
               {
                 title: "E-commerce Platform",
-                desc: "A modern e-commerce solution built with Next.js and Stripe integration",
+                desc: "A modern e-commerce solution built with Next.js.",
                 tech: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
                 image: "/images/ecommerce.png",
                 codeLink: "https://github.com/YumgNPO/e-commerce-store.git",
@@ -257,7 +257,7 @@ export default function ProfilePage() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button size="sm" variant="outline" className="gap-2" asChild>
+                    <Button size="sm" variant="outline" className="gap-2 bg-transparent" asChild>
                       <Link href={project.codeLink} target="_blank">
                         <Github className="h-4 w-4" />
                         <span>Code</span>
@@ -276,7 +276,7 @@ export default function ProfilePage() {
           </div>
 
           <div className="flex justify-center">
-            <Button variant="outline" className="gap-2" asChild>
+            <Button variant="outline" className="gap-2 bg-transparent" asChild>
               <Link href="https://github.com/YumgNPO" target="_blank">
                 <Github className="h-4 w-4" />
                 <span>View More Projects on GitHub</span>
@@ -335,7 +335,7 @@ export default function ProfilePage() {
                     degree: "Bachelor of Electronics and Computer Engineering",
                     school: "",
                     date: "2022 - 2027",
-                    desc: "Currently in 3rd year",
+                    desc: "Currently in 4th year",
                   },
                 ].map((edu, index) => (
                   <div key={index} className="relative">
@@ -350,24 +350,7 @@ export default function ProfilePage() {
                 ))}
               </div>
 
-              <h3 className="text-xl font-bold mt-12">Certifications</h3>
-              <div className="space-y-4">
-                {[
-                  {
-                    name: "Front End Web Development",
-                    org: "Coursera",
-                    date: "2023",
-                  },
-                ].map((cert, index) => (
-                  <div key={index} className="flex justify-between">
-                    <div>
-                      <div className="font-medium">{cert.name}</div>
-                      <div className="text-sm text-muted-foreground">{cert.org}</div>
-                    </div>
-                    <div className="text-sm text-muted-foreground">{cert.date}</div>
-                  </div>
-                ))}
-              </div>
+              
             </div>
           </div>
         </div>
@@ -450,4 +433,3 @@ export default function ProfilePage() {
     </div>
   )
 }
-
