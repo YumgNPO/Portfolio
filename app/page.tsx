@@ -335,7 +335,7 @@ export default function ProfilePage() {
                     degree: "Bachelor of Electronics and Computer Engineering",
                     school: "",
                     date: "2022 - 2027",
-                    desc: "Currently in 3rd year",
+                    desc: "Currently in 4th year",
                   },
                 ].map((edu, index) => (
                   <div key={index} className="relative">
@@ -350,24 +350,7 @@ export default function ProfilePage() {
                 ))}
               </div>
 
-              <h3 className="text-xl font-bold mt-12">Certifications</h3>
-              <div className="space-y-4">
-                {[
-                  {
-                    name: "Front End Web Development",
-                    org: "Coursera",
-                    date: "2023",
-                  },
-                ].map((cert, index) => (
-                  <div key={index} className="flex justify-between">
-                    <div>
-                      <div className="font-medium">{cert.name}</div>
-                      <div className="text-sm text-muted-foreground">{cert.org}</div>
-                    </div>
-                    <div className="text-sm text-muted-foreground">{cert.date}</div>
-                  </div>
-                ))}
-              </div>
+              
             </div>
           </div>
         </div>
