@@ -3,10 +3,10 @@ import "@/app/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
-  title: "Orumere Praise - Frontend Developer",
-  description: "Professional portfolio showcasing my skills and projects as a frontend developer",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-    generator: 'v0.app'
+  title: "Orumere Nyerhovwo Praise - Software Engineer",
+  description:
+    "Portfolio of Orumere Nyerhovwo Praise, a software engineer building performant web applications, AI agent platforms, and physics-informed machine learning models.",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1"
 }
 
 export default function RootLayout({
