@@ -172,7 +172,7 @@ export default function ProfilePage() {
             </Link>
           </div>
           <nav className="hidden md:flex gap-6">
-            {["About", "Skills", "Projects", "Experience", "Contact"].map((item) => (
+            {["Skills", "Projects", "Experience", "Contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -191,7 +191,7 @@ export default function ProfilePage() {
             {mobileMenuOpen && (
               <div className="absolute top-16 left-0 right-0 bg-background border-b p-4 shadow-lg z-50">
                 <div className="flex flex-col space-y-3">
-                  {["About", "Skills", "Projects", "Experience", "Contact"].map((item) => (
+                  {["Skills", "Projects", "Experience", "Contact"].map((item) => (
                     <button
                       key={item}
                       onClick={() => scrollToSection(item.toLowerCase())}
@@ -262,7 +262,7 @@ export default function ProfilePage() {
           <div className="flex items-center justify-center order-1 lg:order-2">
             <div className="relative h-56 w-56 overflow-hidden rounded-full border-4 border-background shadow-xl sm:h-64 sm:w-64 lg:h-80 lg:w-80">
               <Image
-                src="/images/profile.png"
+                src="/images/profile.jpg"
                 alt="Orumere Nyerhovwo Praise - Profile Image"
                 fill
                 className="object-cover"
@@ -405,9 +405,15 @@ export default function ProfilePage() {
                 {[
                   {
                     role: "Web Developer Intern",
+                    company: "Montech Controls LTD",
+                    date: "2021 - 2022",
+                    desc: "Assisted in developing and maintaining company website. Practiced modern web development flow.",
+                  },
+                  {
+                    role: "Web Developer",
                     company: "Icon Lifting And Rigging Services",
-                    date: "2025 - 2026",
-                    desc: "Assisted in developing and maintaining company website. Practiced modern web development practices.",
+                    date: "2025 - current",
+                    desc: "Developed and maintained company website, and QR code software.",
                   },
                 ].map((job, index) => (
                   <div key={index} className="relative">
