@@ -112,10 +112,12 @@ const projects: Project[] = [
     demoLink: "https://tundrel.com",
   },
   {
-    title: "QuantPINN",
-    subtitle: "Physics-Informed Machine Learning",
-    desc: "Engineered end-to-end data processing pipelines and numerical simulation tooling using PyTorch to solve partial differential equations, model 1D/2D wave dynamics, and analyze quantitative financial market momentum. Demonstrates complex data handling, numerical workflows, and high-performance backend computation relevant to R&D and scientific software applications.",
-    tech: ["Python", "PyTorch", "Scientific ML (SciML)", "Differential Equations"],
+  title: "QuantPINN",
+  subtitle: "Physics-Informed Neural Network for the 2D Wave Equation",
+  desc: "Hard-constrained PyTorch PINN for the 2D wave equation, benchmarked against a finite-difference reference verified with the analytical solution. Relative L2 error of 0.051% across 1.65M space-time nodes, trained in about 2.5 minutes on a single GTX 1650.",
+  tech: ["Python", "PyTorch", "Scientific ML (SciML)", "Finite Differences"],
+  image: "/images/quantpinn.png",
+  codeLink: "https://github.com/YumgNPO/QuantPINN",
   },
   {
     title: "MCP-Sentinel",
