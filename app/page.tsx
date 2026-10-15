@@ -104,27 +104,29 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Tundrel",
-    subtitle: "Production AI Voice & Answering Platform",
-    tag: "Production",
-    desc: "Built and deployed a production web platform offering 24/7 AI voice receptionists, automated dispatching, and intelligent call qualification. Configured server-side API pipelines and responsive UI components ensuring real-time voice execution and data delivery.",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vapi AI", "Server-Sent Events (SSE)"],
-    demoLink: "https://tundrel.com",
+  title: "Tundrel",
+  subtitle: "Production AI Voice & Answering Platform",
+  tag: "Production",
+  desc: "Built and deployed a production web platform offering 24/7 AI voice receptionists, automated dispatching, and intelligent call qualification. Configured server-side API pipelines and responsive UI components ensuring real-time voice execution and data delivery.",
+  tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vapi AI", "Server-Sent Events (SSE)"],
+  image: "/images/tundrel.png",
+  demoLink: "https://tundrel.com",
   },
   {
   title: "QuantPINN",
   subtitle: "Physics-Informed Neural Network for the 2D Wave Equation",
-  desc: "Hard-constrained PyTorch PINN for the 2D wave equation, benchmarked against a finite-difference reference verified with the analytical solution. Relative L2 error of 0.051% across 1.65M space-time nodes, trained in about 2.5 minutes on a single GTX 1650.",
+  desc: "Hard-constrained PyTorch PINN for the 2D wave equation, benchmarked against the analytical solution and a finite-difference reference. 0.054% relative L2 error across 1.65M space-time nodes, trained in about 2.5 minutes on a single GTX 1650.",
   tech: ["Python", "PyTorch", "Scientific ML (SciML)", "Finite Differences"],
   image: "/images/quantpinn.png",
   codeLink: "https://github.com/YumgNPO/QuantPINN",
   },
   {
-    title: "MCP-Sentinel",
-    subtitle: "Security Scanner for Model Context Protocol",
-    desc: "Developed a static analysis security scanner for Model Context Protocol (MCP) servers. Audits tool definitions and server manifests for prompt injection vectors, tool description poisoning, unpinned dependencies, and AST execution sinks.",
-    tech: ["Python", "AST Analysis", "YARA", "JSON Schema Validation"],
-    codeLink: "https://github.com/YumgNPO/mcp-sentinel",
+  title: "MCP-Sentinel",
+  subtitle: "Security Scanner for Model Context Protocol",
+  desc: "Developed a static analysis security scanner for Model Context Protocol (MCP) servers. Audits tool definitions and server manifests for prompt injection vectors, tool description poisoning, unpinned dependencies, and AST execution sinks.",
+  tech: ["Python", "AST Analysis", "YARA", "JSON Schema Validation"],
+  image: "/images/mcp-sentinel.png",
+  codeLink: "https://github.com/YumgNPO/mcp-sentinel",
   },
   {
     title: "E-commerce Platform",
@@ -403,9 +405,9 @@ export default function ProfilePage() {
                 {[
                   {
                     role: "Web Developer Intern",
-                    company: "Montech Ltd",
-                    date: "2021 - 2022",
-                    desc: "Assisted in developing and maintaining company website. Learned modern web development practices and agile methodologies.",
+                    company: "Icon Lifting And Rigging Services",
+                    date: "2025 - 2026",
+                    desc: "Assisted in developing and maintaining company website. Practiced modern web development practices.",
                   },
                 ].map((job, index) => (
                   <div key={index} className="relative">
@@ -433,7 +435,7 @@ export default function ProfilePage() {
                     degree: "B.Eng. Electronics and Computer Engineering",
                     school: "University of Port Harcourt (UniPort)",
                     date: "2022 - 2027",
-                    desc: "Undergraduate. Focus on electronic circuits, hardware-software integration, digital system design, microprocessors (8051), and software engineering principles.",
+                    desc: "Undergraduate. Focus on electronic circuits, hardware-software integration, digital system design, microprocessors, and software engineering principles.",
                   },
                 ].map((edu, index) => (
                   <div key={index} className="relative">
@@ -456,7 +458,7 @@ export default function ProfilePage() {
               <div className="relative pl-8 space-y-8 before:absolute before:inset-0 before:ml-4 before:h-full before:w-0.5 before:bg-muted-foreground/30">
                 {[
                   { language: "English", level: "Native" },
-                  { language: "Japanese (日本語)", level: "Hiragana & Katakana, conversational practice" },
+                  { language: "Japanese (日本語)", level: "conversational" },
                 ].map((item, index) => (
                   <div key={index} className="relative">
                     <div className="absolute -left-8 mt-1.5 h-3 w-3 rounded-full border-2 border-background bg-primary"></div>
